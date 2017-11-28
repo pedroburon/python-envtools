@@ -5,8 +5,9 @@ python:
   - "3.6"
 # command to install dependencies
 install:
-  - pip install pipenv
   - pip install nose
+  - pip install coverage
+  - pip install coveralls
 # command to run tests
 script:
   - python --version
