@@ -8,7 +8,8 @@ install:
   - pip install coveralls
 # command to run tests
 script:
-  - python setup.py test
+  - python --version
+  - python setup.py nosetest
 # upload coverage info
 after_success:
   - coveralls

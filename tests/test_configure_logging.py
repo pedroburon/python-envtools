@@ -1,7 +1,8 @@
 
 import unittest
 
-from envtools import override_environment, configure_logging
+from envtools import override_environment
+from envtools.logging_config import configure_logging
 
 
 class TestConfigureLoggingLevel(unittest.TestCase):

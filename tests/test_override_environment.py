@@ -86,6 +86,7 @@ class TestOverrideEnvironmentDecorator(unittest.TestCase):
         def func():
             self.assertEqual(os.getenv('FOO'), expected_foo)
             self.assertEqual(os.getenv('BAR'), expected_bar)
+        func()
         self.assertEqual(os.getenv('FOO'), existent_foo)
         self.assertEqual(os.getenv('BAR'), existent_bar)
 
