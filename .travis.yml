@@ -9,7 +9,7 @@ install:
 # command to run tests
 script:
   - python --version
-  - python setup.py nosetest
+  - python setup.py nosetests
 # upload coverage info
 after_success:
   - coveralls
