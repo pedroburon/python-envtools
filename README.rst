@@ -1,6 +1,6 @@
-=======================================
-Useful environment toolchain for python
-=======================================
+===============
+python-envtools
+===============
 
 .. image:: https://travis-ci.org/pedroburon/python-envtools.svg?branch=master
    :target: https://travis-ci.org/pedroburon/python-envtools
@@ -8,6 +8,7 @@ Useful environment toolchain for python
 .. image:: https://coveralls.io/repos/github/pedroburon/python-envtools/badge.svg?branch=master
    :target: https://coveralls.io/github/pedroburon/python-envtools?branch=master
 
+Useful environment toolchain for python
 
 ********************
 override_environment

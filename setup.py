@@ -1,24 +1,22 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os
-
-try:
-    from setuptools import setup, find_packages
-except ImportError:
-    from distutils.core import setup, find_packages
+from setuptools import setup, find_packages
+from codecs import open
+from os import path
 
 import envtools
 
+here = path.abspath(path.dirname(__file__))
 
-with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as f:
+# Get the long description from the README file
+with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     readme = f.read()
-
 
 setup(
     name='python-envtools',
     version=envtools.__version__,
-    description=envtools.__doc__,
+    description='Python environment toolchain',
     long_description=readme,
     packages=find_packages(exclude=('tests',)),
     setup_requires=['nose>=1.0', 'coverage'],
